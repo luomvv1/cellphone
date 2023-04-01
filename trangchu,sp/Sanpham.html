@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bán Điện Tử</title>
+    <link rel="stylesheet" href="sanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script>// Lắng nghe sự kiện scroll trên trang web
+        window.addEventListener('scroll', function() {
+          var backToTopBtn = document.querySelector('.back-to-top-btn');
+          // Nếu thanh cuộn lớn hơn 100px thì hiển thị nút triển lên trang đầu
+          if (window.pageYOffset > 100) {
+            backToTopBtn.style.display = 'block';
+          } else {
+            backToTopBtn.style.display = 'none';
+          }
+        });</script>
+</head>
+<body>
+    <div class="header">
+        <div class="img">
+            <img src="../Image/334312931_899428618015201_946757843328141974_n.png" alt="">
+        </div>
+    </div>
+    <div class="nav">
+      <div class="contaner">
+        <ul>
+            <li><a href=""><img style="width: 40px;" src="../Image/logo.png" alt=""></a></li>
+            <li id="adress-form"><a href="#"> Bình Dương <i class="fa fa-sort-down"></i></a></li>
+            <li>
+                <input type="text" placeholder="Bạn tìm gì...">
+                <i class="fa fa-search"></i>
+            </li>
+            <li><a href=""><button>Lịch sử đơn <br><span> hàng</span></button></a></li>
+            <li><a href=""><button><i class="fa fa-cart-shopping"></i>Giỏ Hàng</button></a></li>
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="Sanpham.html">Sản Phẩm</a></li>
+            <li><a href="">Hỏi Đáp</a></li>
+            <li><a href="../login/dangnhap.html">Đăng Nhập
+                <i class="fa fa-user"></i>
+            </a></li>
+            <div class="adress-form">
+                <div class="adress-form-content">
+                    <h2>Chọn Địa Chỉ Nhận Hàng <span id="adress-close">X Đóng</span></h2>
+                    <form action="">
+                        <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao</p>
+                        <select name="" id="">
+                            <option value="#">--Chọn đỉa điểm</option>
+                            <option value="#">Bình Dương</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="#">--Chọn quận/huyện</option>
+                            <option value="#">Bình Dương</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="#">--Chọn phường xã</option>
+                            <option value="#">Bình Dương</option>
+                        </select>
+                        <input type="text" placeholder="Số nhà, tên đường">
+                        <button>Xác nhận</button>
+                    </form>
+                </div>
+            </div>
+            <!-- <div class="adress-login">
+                <div class="adress-login-content">
+                    <form action="">
+                       <h2>Đăng nhập <span id="adress-close1">X Đóng</span></h2>
+                       <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Tên đăng nhập">
+                       </div>
+                       <div class="form-group">
+                        <input type="password" class="form-input" placeholder="Mật khẩu">
+                       </div>
+                       <input type="submit" value="Đặng nhập" class="form-submit">
+                    </form>
+                </div>
+            </div> -->
+           </ul>
+      </div>
+    </div>
+    <section class="slider">
+            <div class="slider-contaner">
+                <a href=""><img src="../Image/336357963_770794434473006_7446577642567428267_n.png" alt=""></a>
+            </div>        
+    </section>
+    <a href="#" class="back-to-top-btn"> <i class="fa fa-chevron-up"></i></a>
+    <section class="product">
+        <img src="../Image/img3.png" alt="">
+        <ul class="list-product">
+            <div class="item">
+                <a href="../product.html/iphone 11.html"><img  src="../Image/ip 11.jpg" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">iPhone 11 mới chính hãng VN/A</div>
+                <div class="mota">Còn Hàng</div>
+                <div class="gia">8.990.000 <sup>đ</sup></div>
+            </a>
+            </div>
+            <div class="item">
+                <a href="../product.html/iphone13.html"><img  src="../Image/iphone-13-pro.jpg" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">iPhone 13 Pro Max chính hãng VN/A</div>
+                <div class="mota">Giảm giá -9%</div>
+                <div class="gia">26.390.000 <sup>đ</sup></div>
+            </a>
+            </div>
+            <div class="item">
+                <a href="../product.html/Realme10 ProPlus5G.html"><img src="../Image/600_realme_10_pro_plus_5g_xanh.jpg" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">Realme10 ProPlus5G</div>
+                <div class="mota">Còn hàng</div>
+                <div class="gia">5.690.000 <sup>đ</sup></div>
+            </a>
+            </div>
+            <div class="item">
+                <a href="../product.html/RealmeQ5Pro.html"><img src="../Image/realme-q5-pro.jpg" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">Realme Q5 Pro</div>
+                <div class="mota">Giảm giá -8.7%</div>
+                <div class="gia">5.390.000 <sup>đ</sup></div>
+            </a>
+            </div>
+        </ul>
+        <ul class="list-product">
+            <div class="item">
+                <a href="../product.html/RedmiK50.html"><img src="../Image/k50.jfif" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">Xiaomi Redmi K50</div>
+                <div class="mota">Còn hàng</div>
+                <div class="gia">6.990.000 <sup>đ</sup></div>
+            </a>
+            </div>
+            <div class="item">
+                <a href="../product.html/SamsungGalax S22+5G.html"><img  src="../Image/Galaxy-S22+.jpg" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">Samsung Galaxy S22+ 5G</div>
+                <div class="mota">Giảm giá -9%</div>
+                <div class="gia">13.490.000 <sup>đ</sup></div>
+            </a>
+            </div>
+            <div class="item">
+                <a href="../product.html/SamsungGalaxyS21Plus5G.html"><img  src="../Image/samsung-galaxy-s21.jpg" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">SamsungGalaxyS21Plus5G</div>
+                <div class="mota">Giảm giá -9%</div>
+                <div class="gia">11.890.000 <sup>đ</sup></div>
+            </a>
+            </div>
+            <div class="item">
+                <a href="../product.html/redmik605G.html"><img src="../Image/readmek605g.jpg" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">Xiaomi Redmi K60 5G</div>
+                <div class="mota">Giảm giá -12%</div>
+                <div class="gia">8.090.000 <sup>đ</sup></div>
+            </a>
+            </div>
+            <div class="item">
+                <img src="../Image/ipone9.png" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">iphone 12 256GB</div>
+                <div class="mota">Giảm giá -26%</div>
+                <div class="gia">16.990.000 <sup>đ</sup></div>
+            </div>
+            <div class="item">
+                <img src="../Image/ipone10.png" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">Samsung Galaxy S23 5G</div>
+                <div class="mota">Giảm giá -4%</div>
+                <div class="gia">21.990.000 <sup>đ</sup></div>
+            </div>
+            <div class="item">
+                <img src="../Image/ipone1.png" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">Samsung Galaxy A34 5G 256GB</div>
+                <div class="mota">Hàng sắp về</div>
+                <div class="gia">9.490.000 <sup>đ</sup></div>
+            </div>
+            <div class="item">
+                <img src="../Image/ipone12.png" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">OPPO Reno8 T 5G</div>
+                <div class="mota">Còn Hàng</div>
+                <div class="gia">10.990.000 <sup>đ</sup></div>
+            </div>
+            <div class="item">
+                <img src="../Image/ipone13.png" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">OPPO Reno8 series</div>
+                <div class="mota">Giảm giá -5%</div>
+                <div class="gia">17.990.000 <sup>đ</sup></div>
+            </div>
+            <div class="item">
+                <img src="../Image/ipone14.png" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">Samsung Galaxy A23</div>
+                <div class="mota">Còn Hàng</div>
+                <div class="gia">5.690.000 <sup>đ</sup></div>
+            </div>
+            <div class="item">
+                <img style="width: 68.67%;" src="../Image/ipone15.png" alt="">
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="name">OPPO A55</div>
+                <div class="mota">Còn Hàng</div>
+                <div class="gia">3.690.000 <sup>đ</sup></div>
+            </div>
+            
+        </ul>
+    </section>
+     <footer class="tongdv">
+    <div class="tongbao">
+        <div class="thongbao">
+            <h4>Công Ty Điện Thoại CellPhone việt nam</h4>
+            <p>Số GCNĐKDN: 123456</p>
+            <p>Cấp lần đầu: Ngày 26/05  /2004</p>
+            <p>Địa chỉ: Thành Phố Thủ Dầu Một, Tỉnh Bình Dương</p>
+            <p><img src="../Image/thongbaocongthuong.png" alt="đathongbao"></p>
+        </div>
+        <div class="thongbao">
+            <h4>đăng ký nhận tin</h4>
+            <form>
+            <input type="text" placeholder="Ho ten (*)">
+            <input type="email" placeholder="Email (*)">
+            <input type="submit" value="đăng ký">
+        </form>
+        </div>
+        <div class="thongbao">
+           <h4>đường dây nóng</h4>
+           <p>✆ 0274 1253 7456</p>
+           <p>@ Cellphone@gmail.com</p>
+           </div>
+    </div>
+    <div id="tongketthuc">
+        <div id="ketthuc">
+            <p>Sơ đồ trang | Chính sách và điều khoản | Chính sách bảo mật thông tin cá nhân </p>
+        </div>
+        <div id="ketthuc">
+           <p>© Bản quyền thuộc về Công ty CellPhone Việt Nam</p>
+        </div>
+    </div>
+</footer>
+<script src="thi.js"></script>
+</body>
+</html>

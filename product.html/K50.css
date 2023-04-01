@@ -1,0 +1,644 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.header{
+ text-align: center;  
+}
+.img {
+    height: 55px;
+}
+.img img{
+  width: 100%;
+
+}
+.nav{
+  background-color: #000;
+}
+.contaner{
+  max-width:1200px ;
+  margin: 0px auto;
+}
+.nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.nav ul li, a{
+  color: #fff;
+ font-size: 12px;
+}
+.nav ul li:nth-child(2) a
+{
+  color: #fff;
+  font-size: 14px;
+}
+.nav ul li:nth-child(2) i
+{
+  color: yellow;
+  font-size: 14px;
+}
+.nav ul li:nth-child(3){
+  position: relative;
+}
+.nav ul li:nth-child(3) input{
+  width: 300px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 0 15px;
+  font-size: 14px;
+}
+.nav ul li:nth-child(3) i{
+  position: absolute;
+  align-items: center;
+  color: #000;
+  font-size: 15px;
+  right: 12px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.nav ul li:nth-child(4) button{
+  height: 35px;
+  padding: 0 8px;
+  cursor: pointer;
+  background-color: #FFBC06;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #FFBC06;
+  font-size: 14px;
+}
+.nav ul li:nth-child(5) button{
+  height: 30px;
+  padding: 0 8px;
+  cursor: pointer;
+  background-color: #FFBC06;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #FFBC06;
+  font-weight: 500;
+  font-size: 14px;
+}
+.nav ul li:nth-child(5) i{
+  padding: 0 10px;
+  color: #fff;
+}
+.nav ul li:nth-child(6) a
+{
+ font-size: 14px;
+ color: #fff;
+}
+.nav ul li:nth-child(7) a
+{
+ font-size: 14px;
+ color: #fff;
+}
+.nav ul li:nth-child(8) a
+{
+ font-size: 14px;
+ color: #fff;
+}
+.nav ul li:nth-child(9) a
+{
+ font-size: 14px;
+ color: #fff;
+}
+.nav ul li:nth-child(9) i
+{
+ font-size: 14px;
+ padding: 0px 5px;
+ color: #fff; 
+}
+.adress-form{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+  display: none;
+  z-index: 999;
+}
+.adress-form-content{
+  width: 435px;
+  height: 422px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.adress-form-content form{
+  padding: 0px 40px;
+}
+.adress-form-content h2{
+  color: #000;
+  font-size: 20px;
+  padding: 12px 0px;
+  position: relative;
+}
+.adress-form-content h2 span{
+  display: block;
+  position: absolute;
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid #ddd;
+  right: 12px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 30px;
+  color: #333;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.adress-form-content form p{
+  color: #000;
+  font-size: 15px;
+  padding: 0px 5px;
+}
+.adress-form-content form input,select{
+  height: 45px;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 6px;
+  border-radius: 5px;
+}
+.adress-form-content form button{
+  margin-top: 20px;
+  height: 40px;
+  width: 80%;
+  background-color: #F97E0E;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+.adress-form-content form button:hover{
+  color: #000;
+}
+.adress-login{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+  display: none;
+  z-index: 999;
+}
+.adress-login-content{
+  width: 435px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px 30px 40px;
+  box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
+}
+.adress-login-content form{
+  padding: 0px 40px;
+}
+.adress-login-content form h2{
+  color: #fff;
+  font-size: 20px;
+   margin-bottom: 30px;
+  position: relative;
+}
+.adress-login-content form h2 span{
+  display: block;
+  position: absolute;
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid #ddd;
+  right: -30px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 30px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.adress-login-content form .form-group{
+  border-bottom: 1px solid #fff;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.adress-login-content form .form-input{
+ background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.adress-login-content form .form-input::placeholder{
+  color: #fff;
+}
+.adress-login-content form .form-submit{
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  transition: 0.25s ease-in-out;
+  margin-top: 30px;
+}
+.adress-login-content form .form-submit:hover{
+  border: 1px solid #54a0ff;
+}
+.slider{
+  height: 350px;
+}
+.slider-contaner {
+  width: 100%;
+  height: 300px;
+}
+.slider-contaner img{
+  width: 100%;
+  height: 100%;
+
+}
+.content{
+  width: 100%;
+  height: 500px;
+}
+.content h2{
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+.trangdautien {
+    width: 80%;
+    height: auto;
+    margin: 15px auto;
+    background-color: burlywood;
+    border-radius:10px;
+}
+.trangdautien h2 {
+  text-align: center;
+}
+.trangdau {
+    margin: 0px auto;
+    display: flex;
+    margin-bottom: 20px;
+    width: 80%
+  }
+  
+  .trangdau-image {
+    width: 30%;
+    margin-right: 20px;
+  }
+  
+  .trangdau-image img {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-bottom: 10px;
+  }
+
+  .trangdau-image .mota {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    background-color: #bc5826;
+    text-align: center;
+    border-radius:10px;
+    margin-bottom: 10px;
+  }
+  .trangdau-info {
+    width: 60%;
+    margin-left: 100px;
+  }
+  .trangdau-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .trangdau-status {
+   
+    font-size: 16px;
+    color: green;
+  }
+  
+  .trangdau-options {
+    
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+  }
+  
+  .trangdau-option {
+    font-size: 16px;
+  }
+  
+  .trangdau-promotions {
+    margin-top:5px;
+  }
+  .bonho {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .bonho label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .bonho label:hover {
+    border-color: #333;
+  }
+  
+  .bonho input[type="radio"] {
+    display: none;
+  }
+  
+  .bonho input[type="radio"]:checked + span {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  .khuyenmai {
+    width: 75%;
+    height: auto;
+    padding: 0px 20px;
+    margin-top: 5px;
+  }
+  .khuyenmai b{
+    font-size: 17px;
+  }
+  .product {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .giohang {
+    width: 35%;
+    background-color: #784d23;
+    color: white;
+    border: none;
+    border-radius:10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+  }
+  .muahang {
+    width: 35%;
+    background-color: #c2d51a;
+    color: white;
+    border: none;
+    border-radius:10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .muahang:hover , .giohang:hover {
+    background-color: #3e8e41;
+  }
+  .thongso {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 0px auto;
+    width: 60%;
+  }
+  .thongso th {
+    background-color: #ff5100;
+    border: 1px solid #ccc;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .thongso tr:nth-child(even) {
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+  }
+  .thongso tr:hover {
+    border: 1px solid #ccc;
+  }
+  .thongso td {
+    padding: 5px 10px;
+    height: auto;
+  }
+  .dacdiem {
+    max-width: 80%;
+    margin: 10px auto;
+  }
+  .content {
+    display: none;
+  }
+  .dacdiem img {
+    margin: 15px auto 15px 11%;
+    max-width: 70%;
+  }
+  .dacdiem h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .dacdiem h3 {
+    margin: 15px;
+  }
+  .dacdiem h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 100px;
+  }
+  .dacdiem p {
+    margin: 10px auto;
+
+  }
+  .tongdv {
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin: 0px auto;
+}
+.tongdv .tongdvv{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+}
+.tongdv .tong h4 {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: peru;
+    margin: 10px 0;
+}
+.tongdv .tongdvv .tong {
+    width: 17%;
+    padding: 15px;
+}
+.tongdv .tong p{
+    text-align: justify;
+    font-size: 14px;
+}
+.tongdv .tongbao {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+}
+.tongdv .tongbao .thongbao {
+    width: calc(100% / 3);
+    padding: 20px;
+}
+.tongdv .tongbao .thongbao h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: peru;
+    margin: 10px 0;
+}
+.tongdv .tongbao .thongbao p{
+    font-size: 16px;
+    padding: 5px 0px;
+}
+.tongdv .tongbao .thongbao img {
+    max-width: 50%;
+    max-height: 100%;
+}
+.tongdv .tongbao .thongbao form input[type=text],
+.tongdv .tongbao .thongbao form input[type=email]{
+    background-color: rgb(150, 148, 148,0.3);
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 10px;
+    outline: none;
+    color: #fff;
+}
+.tongdv .tongbao .thongbao form input[type=submit]{
+    font-size: 16px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.tongdv .tongbao .thongbao form input[type=submit]:hover{
+    background-color: #ccc;
+    color: #000;
+    font-weight: 700;
+}
+#tongketthuc {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+}
+#ketthuc {
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    text-align: center;
+    padding: 0px 30px;
+}
+#ketthuc p{
+    font-size: 16px;
+}
+#content {
+  display: none;
+}
+.xemthem {
+  width: 80%;
+  height: 40px;
+  clear: both;
+  margin: 20px auto;
+}
+#showMoreBtn {
+  clear: both;
+  font-size: 20px;
+  margin-left: 39%;
+  text-align: center;
+  padding: 5px 15px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px 10px;
+}
+.back-to-top-btn {
+  background-color: #008CBA;
+  border-radius: 50%;
+  bottom: 20px;
+  color: #fff;
+  display: none;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 50px;
+  z-index: 9999;
+}
+
+.back-to-top-btn:hover {
+  background-color: #555;
+}
+
+.back-to-top-btn i {
+  font-size: 24px;
+  line-height: 50px;
+}
+legend {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2e2e2e;
+  margin-bottom: 10px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+legend i {
+  font-size: 16px;
+  color: #ffffff;
+  margin-right: 10px;
+  padding: 2px 10px;
+}
+
+
+  
+  
+  
